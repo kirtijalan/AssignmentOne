@@ -1,0 +1,179 @@
+body{
+  width:auto;
+  min-width: 1130px;
+  margin-top: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+a{
+  color:red;
+}
+a:hover{
+  color:#00FF00;
+}
+
+/* ---------- HEADER ---------- */
+
+header{
+  color:#5DADE2;
+  background-color: white;
+  width:100%;
+  min-width: 1130px;
+  overflow: hidden;
+  position: fixed;
+  z-index:100;
+  }
+header h1{
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 3px;
+  width:200px;
+  margin: 0px 15px;
+  float:left;
+  font-size: 3em;
+}
+header a{
+  text-decoration: none;
+}
+header ul{
+  float:right;
+  margin-top: 60px;
+}
+header li{text-decoration: none;
+  display: inline;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 3em;
+  margin-right: 4px;
+  padding: 0 5px;
+}
+header li:after{
+  content: "|";
+  padding: 0 2px;
+  margin-left: 15px;
+}
+header li:last-child:after{
+  content: " ";
+}
+
+/* ---------- Div Class Options ---------- */
+div.options{
+  display: none;
+  width: 326px;
+  background-color:yellow;
+  height: 50px;
+  position: fixed;
+  z-index: 120;
+  float:right;
+  margin-top: 15px;
+  margin-left: 315px;
+  text-align: center;
+}
+a:hover + div{
+    display: block;
+}
+
+/* ---------- ARTICLE ---------- */
+article .text{
+  margin-top: 680px;
+  font-family: cursive;
+  font-size: 1.5em;
+}
+.text h1{
+  color:#D32F7C;
+  margin-top: 120px;
+  font-size: 2em;
+  font-family: 'Pacifico', cursive;
+}
+article.fragment img{
+  margin-top: 680px;
+  width:800px;
+  height: 600px;
+}
+blockquote{
+  text-align: center;
+  padding: 20px;
+}
+/* ---------- 2 Column Why MiM Blocl ---------- */
+.whyMim{
+  font-family: 'Cabin Sketch', cursive;
+  font-size:1.8em;
+  background-color: #FEFE60;
+  height:80px;
+  margin-bottom: 20px;
+}
+.whyMim p{
+  padding:10px;
+  text-align: center;
+  font-size:2em;
+}
+.whygrid .whytext{
+  height: 185px;
+  font-family: cursive;
+  text-align: justify;
+  font-size: 1.5em;
+  width:80%;
+}
+.whytext h3:hover{
+  text-transform: uppercase;
+  color: #00A9E4;
+}
+.whytext h3{
+  padding: 2px;
+}
+.whygrid img{
+  height:200px;
+}
+.whygrid{
+  margin-top: 2px;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+  height:430px;
+  background-color: #00A9E4;
+}
+.hero img{
+  margin-top: 60px;
+  margin-left:70px;
+}
+
+/* ---------- 3 COLUMN SECTION ---------- */
+div.column3{
+  margin-top: 50px;
+  font-family: cursive;
+  text-align:justify;
+  margin-bottom: 50px;
+  padding: 4px;
+  line-height: 25px;
+}
+img.col3{
+  border-radius: 25px;
+  width: 300px;
+  height: 350px;
+  margin-bottom: 15px;
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+  height:250px;
+  top-margin: 0px;
+  background-color: #FEFE60;
+}
+footer p{
+  visibility: hidden;
+}
+footer img{
+  float:right;
+  height:250px;
+  width: 450px;
+  margin-right: 10px;
+  background-color: #FFFF00;
+}
+footer p{
+  float:left;
+  font-family: 'Amatica SC', cursive;
+  font-size:5em;
+  margin-left:20px;
+  margin-top:50px;
+  visibility: visible;
+  color: black;
+}

@@ -1,0 +1,140 @@
+
+/* ---------- GALLERY: OPACITY & ALIGNMENT ---------- */
+div.picgal{
+  margin-top: 0px;
+  font-family: sans-serif;
+  text-align:justify;
+  margin-bottom: 50px;
+}
+div.shiftdown{
+  margin-top: 180px;
+}
+img.gallery:hover{
+  opacity: 1.0;
+}
+img.gallery{
+  opacity: 0.7;
+  border-radius: 155px;
+  width: 250px;
+  height:250px;
+  margin-bottom: 15px;
+}
+
+/* ---------- ANIMATION ---------- */
+
+/* ---------- MOVE LEFT ---------- */
+img.leftMove{
+  position: relative;
+    -webkit-animation-name: moveLeft; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: moveLeft;
+    animation-duration: 1s;
+}
+@-webkit-keyframes moveLeft {
+    0%   {left:-50px; top:0px;}
+    25%  {left:-40px; top:0px;}
+    50%  {left:-30px; top:0px;}
+    75%  {left:-20px; top:0px;}
+    100% { left:-10px; top:0px;}
+}
+/* ---------- MOVE DOWN ---------- */
+img.downMove{
+  position: relative;
+    -webkit-animation-name: moveDown; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: moveDown;
+    animation-duration: 1s;
+}
+@-webkit-keyframes moveDown {
+    0%   {top:-20px;}
+    25%  {top:-15px;}
+    50%  {top:-10px;}
+    75%  {top:-5px;}
+    100% {top:0px;}
+}
+/* ---------- MOVE RIGHT ---------- */
+img.rightMove{
+  position: relative;
+    -webkit-animation-name: moveRight; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: moveRight;
+    animation-duration: 1s;
+}
+@-webkit-keyframes moveRight {
+    0%   {right:-30px; top:0px;}
+    25%  {right:-40px; top:0px;}
+    50%  {right:-20px; top:0px;}
+    75%  {right:-20px; top:0px;}
+    100% { right:-10px; top:0px;}
+}
+/* ---------- MOVE UP ---------- */
+img.upMove{
+  position: relative;
+    -webkit-animation-name: moveUpt; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: moveUp;
+    animation-duration: 1s;
+}
+@-webkit-keyframes moveUp {
+    0%   {bottom:-0px;}
+    25%  {bottom:-15px;}
+    50%  {bottom:-10px;}
+    75%  {bottom:-5px;}
+    100% {bottom:0px;}
+}
+
+/* ---------- COMMENTS ---------- */
+.comments{
+  height:300px;
+  background-color: #DF2976;
+  margin-bottom: 50px;
+}
+textarea{
+  border-radius: 10px;
+  margin: 40px;
+  margin-left:122px;
+  width: 70%;
+  height: 140px;
+  font-size: 2em;
+  align-content: center;
+}
+.sub {
+  background: #0066A2;
+  color: white;
+  border-style: outset;
+  border-color: #0066A2;
+  height: 50px;
+  width: 200px;
+  font: bold 15px arial, sans-serif;
+  margin-left: 655px;
+}
+
+
+.cpyrgt{
+  visibility: hidden;
+}
+
+
+
+/* ---------- EXTRA ---------- */
+img:hover + p{
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+  visibility: hidden;
+}
+p{
+  color: yellow;
+  visibility: visible;
+  position: absolute;
+  z-index: 10;
+}
+div.imgTitle{
+  background-color: red;
+  border-radius: 155px;
+  width: 250px;
+  height:250px;
+  color:white;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
